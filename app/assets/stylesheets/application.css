@@ -1,0 +1,94 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.top p, .top a {
+  font-size: 13px;
+  margin: 16px;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+table th:nth-child(3) {
+  width: 170px;
+}
+
+table td {
+  overflow-wrap : break-word;
+  font-size: 13px;
+  padding: 2px;
+}
+
+table td:nth-child(n+3) {
+  text-align: center;
+  border-spacing: 2px;
+}
+
+.new_form h3 {
+  margin: 18px 0;
+}
+
+textarea {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.show_title,.show_body {
+  display: flex;
+  font-size: 16px;
+  margin: 30px;
+}
+
+.show_title p,.show_body p {
+  margin-left: 4px;
+}
+
+.btn_area{
+  display: flex;
+  margin-top: 10px;
+}
+
+.flash-message.notice  {
+  color: green;
+  margin: 20px;
+}
+
+.flash-message.alert {
+  color: red;
+  margin: 20px;
+}
+
+.error_message,.error_message ul {
+  color: red;
+  margin: 20px;
+}
